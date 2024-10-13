@@ -1,0 +1,39 @@
+name: zeely_technical_task
+description: "A Zeely technical task"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.2 <4.0.0"
+  flutter: ">=3.24.1"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Provider
+  provider: ^6.1.1
+
+  #Chart
+  fl_chart: ^0.69.0
+
+  intl: ^0.19.0
+  json_annotation: ^4.9.0
+  flutter_svg: ^2.0.10+1
+  dotted_line: ^3.2.2
+  calendar_date_picker2: ^0.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  json_serializable: ^6.8.0
+
+flutter:
+  assets:
+    - assets/mocked_data.json
+    - assets/icons/metric_chart/
+    - assets/icons/
