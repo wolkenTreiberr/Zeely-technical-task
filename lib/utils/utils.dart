@@ -6,7 +6,7 @@ import '../enums/period_type_enum.dart';
 String formatMetricValue(double value, String metricType) {
   switch (metricType) {
     case 'spend':
-      return '-\$${value.toStringAsFixed(2).replaceAll('.', ',')}';
+      return '\$${value.toStringAsFixed(2).replaceAll('.', ',')}';
     case 'cpm':
       return '\$${value.toStringAsFixed(2).replaceAll('.', ',')}';
     case 'reach':

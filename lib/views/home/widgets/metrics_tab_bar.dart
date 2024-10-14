@@ -1,3 +1,4 @@
+// ignore_for_file: library_private_types_in_public_api
 import 'package:flutter/material.dart';
 import 'package:zeely_technical_task/styles/styles.dart';
 
@@ -34,12 +35,6 @@ class _MetricTypeSectionState extends State<MetricTypeSection> {
       viewportFraction: _tabViewportFraction,
       initialPage: _selectedIndex,
     );
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
   }
 
   void _onTabTapped(int index) {
@@ -92,5 +87,12 @@ class _MetricTypeSectionState extends State<MetricTypeSection> {
         ),
       ),
     );
+  }
+
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 }
